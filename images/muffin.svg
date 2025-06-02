@@ -42,7 +42,7 @@
         fill: #d85c72;
       }
     </style>
-    	<script>const muffin = document.querySelector("#muffin";);
+    	<script>const muffin = document.querySelector(&quot;#muffin&quot;);
 
       function logTheId() {
         console.log(&quot;You clicked on: &quot; + this.id);
@@ -73,7 +73,7 @@
     </g>
   </g>
   <g id="candle">
-    <path id="candle-body" class="cls-5" d="M113.58,45.18h0c4.89,0,8.86,3.97,8.86,8.86v21.95h-17.73v-21.95c0-4.89,3.97-8.86,8.86-8.86Z"/>
+    <path id="candle-body" class="cls-5" d="M113.58,45.18h0c4.89,0,8.86,3.97,8.86,8.86v21.95h-17.73v-21.95c0-4.89,3.97-8.86,8.86-8.86h0Z"/>
     <path id="fire" class="cls-7" d="M126.69,27.93c0-7.24-13.1-27.93-13.1-27.93,0,0-13.1,20.69-13.1,27.93s5.87,13.1,13.1,13.1,13.1-5.87,13.1-13.1Z"/>
   </g>
 </svg>
