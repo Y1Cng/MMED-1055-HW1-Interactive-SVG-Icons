@@ -41,6 +41,53 @@
       .cls-10 {
         fill: #d85c72;
       }
+      
+  <!-- sugar  -->
+    #sugar circle {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    #muffin:hover #sugar circle {
+      animation: sprinkleFall 0.8s ease-out forwards;
+    }
+
+    #muffin:hover #sugar circle:nth-of-type(1) { animation-delay: 0.1s; }
+    #muffin:hover #sugar circle:nth-of-type(2) { animation-delay: 0.5s; }
+    #muffin:hover #sugar circle:nth-of-type(3) { animation-delay: 0.2s; }
+    #muffin:hover #sugar circle:nth-of-type(4) { animation-delay: 0.35s; }
+    #muffin:hover #sugar circle:nth-of-type(5) { animation-delay: 0.15s; }
+    #muffin:hover #sugar circle:nth-of-type(6) { animation-delay: 0.45s; }
+    #muffin:hover #sugar circle:nth-of-type(7) { animation-delay: 0.3s; }
+    #muffin:hover #sugar circle:nth-of-type(8) { animation-delay: 0.6s; }
+    #muffin:hover #sugar circle:nth-of-type(9) { animation-delay: 0.25s; }
+    #muffin:hover #sugar circle:nth-of-type(10) { animation-delay: 0.4s; }
+
+    @keyframes sprinkleFall {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    <!-- flameWiggle -->
+    #fire {
+      transform-origin: center;
+    }
+
+    #muffin:hover #fire {
+      animation: flameWiggle 0.6s infinite ease-in-out alternate;
+    }
+
+    @keyframes flameWiggle {
+      0%   { transform: rotate(0deg) scale(1); }
+      50%  { transform: rotate(-1.5deg) scale(1.02); }
+      100% { transform: rotate(1.5deg) scale(0.98); }
+    }
     </style>
     	<script>const muffin = document.querySelector(&quot;#muffin&quot;);
 

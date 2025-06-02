@@ -21,6 +21,112 @@
       .cls-5 {
         fill: #70431e;
       }
+      
+    <!-- donut  -->
+      @keyframes splitDonut {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(45deg) translateX(40px);
+        }
+      }
+
+      @keyframes splitDonutRight {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(25deg) translateX(20px);
+        }
+      }
+
+      #donut:hover #donut-right {
+        animation: splitDonutRight 0.8s ease-out forwards;
+        transform-origin: center;
+      }
+
+
+      <!-- crumbs  -->
+      @keyframes appear1 {
+        from {
+          opacity: 0;
+          transform: translateY(-10px) scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: rotate(-10deg);
+        }
+        to {
+          opacity: 1;
+          transform: rotate(0);
+        }
+      }
+      @keyframes appear3 {
+        from {
+          opacity: 0;
+          transform: translateX(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes appear4 {
+        from {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          opacity: 0;
+          transform: translateX(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #crumb1, #crumb2, #crumb3, #crumb4 {
+        opacity: 0;
+        transform-origin: center;
+      }
+
+      #donut:hover #crumb1 {
+        animation: slideInLeft 0.4s ease-out 0.1s forwards;
+      }
+      #donut:hover #crumb2 {
+        animation: slideInRight 0.4s ease-out 0.3s forwards;
+      }
+      #donut:hover #crumb3 {
+        animation: slideInLeft 0.4s ease-out 0.5s forwards;
+      }
+      #donut:hover #crumb4 {
+        animation: slideInRight 0.4s ease-out 0.2s forwards;
+      }
     </style>
       <script>
       const donut = document.querySelector(&quot;#donut&quot;);
